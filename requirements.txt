@@ -1,0 +1,19 @@
+# Requirements for Design Pattern Detection project
+# Note: This project was originally written for Python 2.7
+# Some packages may need updates for Python 3 compatibility
+
+# Core dependencies
+# Install plyj from GitHub as PyPI version is outdated
+# pip install git+https://github.com/musiKk/plyj.git
+git+https://github.com/musiKk/plyj.git
+gensim>=4.0.0
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+tqdm>=4.62.0
+
+# Optional dependencies for development
+# pytest>=6.0.0  # for testing
+# black>=21.0.0  # for code formatting
