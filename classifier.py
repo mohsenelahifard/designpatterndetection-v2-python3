@@ -294,6 +294,7 @@ def summarise_cv_results(cv_results):
 
 cm, accuracy, balanced_accuracy, misclassification, precision, recall, fscore, support, precision_final, recall_final, fscore_final = summarise_cv_results(cv_results)
 
+os.makedirs("results", exist_ok=True)
 # Save the confusion matrix to file
 with open("results/confusion_matrix_%s.csv"%(algorithm), "w") as f:
 	ordered_patterns = []
@@ -319,8 +320,7 @@ ax1.set_title("Precision = %2.2f%%  Recall = %.2f%%"%(precision_final*100,recall
 ax1.set_xlabel("Design Pattern")
 ax1.set_ylabel("Precision & Recall")
 plt.xticks(rotation=45, ha="right")
-# Ensure results directory exists before saving plots
-os.makedirs("results", exist_ok=True)
+# Saving plots into result directory
 plt.savefig(f"results/{algorithm} Precision-Recall Scores.png", dpi=200, bbox_inches="tight")
 if SHOW_PLOTS:  # Commented to avoid warnings on Agg backend
     # plt.show()

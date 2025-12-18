@@ -6,7 +6,7 @@ public class SomeClass {
     }
 
     {
-        foo(sing<caret>)
+        foo(null);
     }
 
 }
