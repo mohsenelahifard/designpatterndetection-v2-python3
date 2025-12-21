@@ -241,6 +241,8 @@ cv_results = []
 print("Starting cross-validation...")
 sys.stdout.flush()
 
+all_file_results = []
+
 fold_num = 0
 for train_index, test_index in skf.split(X, y):
     fold_num += 1
@@ -258,6 +260,21 @@ for train_index, test_index in skf.split(X, y):
     
     print(f"Fold {fold_num} completed - Accuracy: {r[1]:.3f}")
     sys.stdout.flush()
+    
+    model = model_builder()
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    
+    fold_results = pd.DataFrame({
+        'project_name': data.iloc[test_index]['project_name'].values,
+        'class_name': data.iloc[test_index]['class_name'].values,
+        'true_pattern': le.inverse_transform(y_test),
+        'predicted_pattern': le.inverse_transform(y_pred)
+    })
+    all_file_results.append(fold_results)
+
+all_file_results_df = pd.concat(all_file_results, ignore_index=True)
+all_file_results_df.to_csv(f"results/file_level_predictions.csv", index=False)
 
 def summarise_cv_results(cv_results):
     cm, accuracy, balanced_accuracy, misclassification, precision, recall, fscore,support, precision_final, recall_final, fscore_final = list(),list(),list(),list(),list(),list(),list(),list(),list(),list(),list()
