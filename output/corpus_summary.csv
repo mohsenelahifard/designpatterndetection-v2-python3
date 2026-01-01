@@ -1,5 +1,5 @@
 Number of projects, Number of files
-214,1278
+211,1256
 
 PROJECT, CLASS
 3taps-Java-Client, GeocoderRequest.java 
@@ -69,8 +69,6 @@ AllBinary-Platform, NullHighScoresSingletonFactory.java
 AllBinary-Platform, RemoteErrorHighScoresSingletonFactory.java 
 AllBinary-Platform, MakeCountedPartsSingletonArrayFactory.java 
 AllBinary-Platform, CurrentlyPressedTouchButtonSingleton.java 
-AllBinary-Platform, PrimitiveLongSingleton.java 
-AllBinary-Platform, SmallIntegerSingletonFactory.java 
 android-rackspacecloud, ApacheHCHttpCommandExecutorServiceModule.java 
 android-rackspacecloud, NioTransformingHttpCommandExecutorServiceModule.java 
 android-rackspacecloud, ConnectionPoolCommandExecutorServiceModule.java 
@@ -223,9 +221,6 @@ cdo, PostgreSQLAdapter.java
 cdo, ContainerEventAdapter.java 
 cdo, IOVisitor.java 
 cdo, DNDDropAdapter.java 
-cdt, AutotoolsConfigurationBuilder.java 
-cdt, LocationAdapter.java 
-cdt, AutoconfPrototype.java 
 cdt, CodanBuilder.java 
 cdt, ControlFlowGraphBuilder.java 
 cdt, ICElementVisitor.java 
@@ -430,11 +425,6 @@ DimSim, EventsJsonProxy.java
 DimSim, PopoutPanelProxy.java 
 DimSim, PopoutWindowProxy.java 
 directory-server, AvlTreeSingleton.java 
-DownloadProvider, RealSystemFacade.java 
-DownloadProvider, SystemFacade.java 
-DownloadProvider, DateSortedDownloadAdapter.java 
-DownloadProvider, DateSortedExpandableListAdapter.java 
-DownloadProvider, DownloadAdapter.java 
 dozer, CacheKeyFactory.java 
 dozer, ClassMapBuilder.java 
 dozer, JAXBBeanFactory.java 
@@ -445,7 +435,6 @@ dozer, DozerBuilder.java
 dozer, BeanMappingBuilder.java 
 dozer, TypeMappingBuilder.java 
 drools, Memento.java 
-Dual-Battery-Widget, ChartFactory.java 
 Dual-Battery-Widget, BillingObserver.java 
 Dual-Battery-Widget, IntentReceiver.java 
 Dual-Battery-Widget, BatteryLevelAdapter.java 
@@ -534,11 +523,6 @@ frostwire-desktop, MouseObserver.java
 frostwire-desktop, ProxyBlock.java 
 frostwire-desktop, ProxyController.java 
 frostwire-desktop, ProxyData.java 
-frostwire-desktop, ElementalReverseProxy.java 
-frostwire-desktop, DnDCellRendererProxy.java 
-frostwire-desktop, MRJ23EventProxy.java 
-frostwire-desktop, MRJ4EventProxy.java 
-frostwire-desktop, MRJEventProxy.java 
 frostwire-desktop, Decorator.java 
 fuzzydb, Decorator.java 
 fuzzydb, IDecorator.java 
@@ -829,7 +813,6 @@ ju4pa, ConcurrentModificationObserver.java
 kahlua2, Prototype.java 
 kodejava, SingletonDemo.java 
 kodejava, Singleton.java 
-lcmc, PrototypeFactory.java 
 liferay-portal, LayoutPrototypeBaseImpl.java 
 liferay-portal, LayoutPrototypeImpl.java 
 liferay-portal, LayoutPrototype.java 
@@ -1236,10 +1219,6 @@ swp1-teamhub, TeamleiterFacade.java
 tapestry-bootstrap, BootStrapValidationDecorator.java 
 tapestry-bootstrap, EnvironmentBindingFactory.java 
 tapestry-bootstrap, SessionBindingFactory.java 
-TapIt-Android-SDK-Source, AlertAdProxyPrototype.java 
-TapIt-Android-SDK-Source, BannerViewProxyPrototype.java 
-TapIt-Android-SDK-Source, InterstitialAdProxyPrototype.java 
-TapIt-Android-SDK-Source, TapitandroidModulePrototype.java 
 TapIt-Android-SDK-Source, AlertAdProxy.java 
 teiid-designer, MappingLabelDecorator.java 
 teiid-designer, VdbModelBuilder.java 
@@ -1273,7 +1252,6 @@ WhartonEventScheduler, PeopleCursorAdapter.java
 wolips, EOPrototypeListContentProvider.java 
 wolips, EOPrototypeListLabelProvider.java 
 wonder, ERPrototypes.java 
-xdi2, Prototype.java 
 XobotOS, Singleton.java 
 zen-project, SingletonSolrAware.java 
 zk, DefaultIDOMFactory.java 
