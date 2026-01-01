@@ -273,6 +273,8 @@ for train_index, test_index in skf.split(X, y):
     })
     all_file_results.append(fold_results)
 
+os.makedirs("results", exist_ok=True)
+
 all_file_results_df = pd.concat(all_file_results, ignore_index=True)
 all_file_results_df.to_csv(f"results/file_level_predictions.csv", index=False)
 
@@ -311,7 +313,6 @@ def summarise_cv_results(cv_results):
 
 cm, accuracy, balanced_accuracy, misclassification, precision, recall, fscore, support, precision_final, recall_final, fscore_final = summarise_cv_results(cv_results)
 
-os.makedirs("results", exist_ok=True)
 # Save the confusion matrix to file
 with open("results/confusion_matrix_%s.csv"%(algorithm), "w") as f:
 	ordered_patterns = []
